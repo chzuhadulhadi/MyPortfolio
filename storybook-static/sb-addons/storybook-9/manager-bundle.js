@@ -1,0 +1,3 @@
+try{
+(()=>{var h=__STORYBOOK_THEMING__,{CacheProvider:l,ClassNames:c,Global:O,ThemeProvider:p,background:T,color:g,convert:S,create:b,createCache:f,createGlobal:C,createReset:k,css:u,darken:x,ensure:y,ignoreSsrWarning:N,isPropValid:R,jsx:v,keyframes:B,lighten:D,styled:G,themes:t,typography:K,useTheme:Y,withTheme:H}=__STORYBOOK_THEMING__;var E=__STORYBOOK_ADDONS__,{addons:a,types:M,mockChannel:W}=__STORYBOOK_ADDONS__;a.setConfig({theme:{...t.dark,brandImage:"./icon.svg",brandTitle:"Hamish Williams Components",brandUrl:"https://hamishw.com"}});})();
+}catch(e){ console.error("[Storybook] One of your manager-entries failed: " + import.meta.url, e); }

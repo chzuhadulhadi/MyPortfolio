@@ -1,0 +1,44 @@
+__ __ __
+/__ __ /
+    / / 
+   / / 
+  / / 
+ / /__ __
+/__ __ /
+   
+
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | デザイナー
+
+Zuhad Ul Hadi
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+twitter.com/zuhadulhadi
+github.com/chzuhadulhadi
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Remix
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS | フォント
+
+Gotham
+IPA Gothic Regular
+Hiragino Kaku Gothic W8

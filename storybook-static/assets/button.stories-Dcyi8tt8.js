@@ -1,0 +1,26 @@
+import{j as m,a as e}from"./jsx-runtime-BQA5H8uj.js";import{B as r}from"./button-Z2kyZSb6.js";import{r as K}from"./index-CBqU2yxZ.js";import{I as W,v as Y}from"./preview-errors-Dg5lG0lC.js";import{S as u}from"./story-container-BmzpGumI.js";import"./icon-Dh4uomy1.js";import"./style-CdEeFtaU.js";import"./loader-CueMVWeZ.js";import"./text-DTChpUZj.js";import"./use-reduced-motion-CCptBKkH.js";import"./is-browser-KK9OLXwR.js";import"./transition-BzLjgPht.js";import"./use-constant-GMTLHggF.js";import"./frame-COx4tYGr.js";import"./components-CTfR_Gqy.js";import"./index-BtM5VmRH.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-CpXMnJUM.js";import"../sb-preview/runtime.js";import"./index-DrFu-skq.js";const{addons:z}=__STORYBOOK_MODULE_PREVIEW_API__,{global:_}=__STORYBOOK_MODULE_GLOBAL__;var M="storybook/actions",U=`${M}/action-event`,$={depth:10,clearOnStoryChange:!0,limit:50},T=(o,t)=>{let n=Object.getPrototypeOf(o);return!n||t(n)?n:T(n,t)},G=o=>!!(typeof o=="object"&&o&&T(o,t=>/^Synthetic(?:Base)?Event$/.test(t.constructor.name))&&typeof o.persist=="function"),q=o=>{if(G(o)){let t=Object.create(o.constructor.prototype,Object.getOwnPropertyDescriptors(o));t.persist();let n=Object.getOwnPropertyDescriptor(t,"view"),c=n==null?void 0:n.value;return typeof c=="object"&&(c==null?void 0:c.constructor.name)==="Window"&&Object.defineProperty(t,"view",{...n,value:Object.create(c.constructor.prototype)}),t}return o},H=()=>typeof crypto=="object"&&typeof crypto.getRandomValues=="function"?Y():Date.now().toString(36)+Math.random().toString(36).substring(2);function i(o,t={}){let n={...$,...t},c=function(...y){var h,k;if(t.implicit){let O=(h="__STORYBOOK_PREVIEW__"in _?_.__STORYBOOK_PREVIEW__:void 0)==null?void 0:h.storyRenders.find(a=>a.phase==="playing"||a.phase==="rendering");if(O){let a=!((k=window==null?void 0:window.FEATURES)!=null&&k.disallowImplicitActionsInRenderV8),C=new W({phase:O.phase,name:o,deprecated:a});if(a)console.warn(C);else throw C}}let x=z.getChannel(),A=H(),N=5,g=y.map(q),V=y.length>1?g:g[0],F={id:A,count:0,data:{name:o,args:V},options:{...n,maxDepth:N+(n.depth||3),allowFunction:n.allowFunction||!1}};x.emit(U,F)};return c.isAction=!0,c}const ko={title:"Button"},f=o=>{const[t,n]=K.useState(!1);return e(r,{loading:t,onClick:()=>n(!t),...o})},l=()=>m(u,{children:[e(r,{onClick:i("clicked"),children:"Text only"}),e(r,{icon:"send",onClick:i("clicked"),children:"Icon left"}),e(r,{iconEnd:"arrow-right",onClick:i("clicked"),children:"Icon right"})]}),s=()=>m(u,{children:[e(r,{secondary:!0,onClick:i("clicked"),children:"Text only"}),e(r,{secondary:!0,icon:"arrow-right",onClick:i("clicked"),children:"Icon left"}),e(r,{secondary:!0,iconEnd:"arrow-right",onClick:i("clicked"),children:"Icon right"})]}),d=()=>m(u,{gutter:20,children:[e(r,{iconOnly:!0,"aria-label":"Send",icon:"send",onClick:i("clicked")}),e(r,{iconOnly:!0,"aria-label":"Figma",icon:"figma",onClick:i("clicked")}),e(r,{iconOnly:!0,"aria-label":"Close",icon:"close",onClick:i("clicked")})]}),p=()=>m(u,{children:[e(f,{children:"Click to load"}),e(f,{icon:"send",children:"Click to load"})]});l.__docgenInfo={description:"",methods:[],displayName:"Primary"};s.__docgenInfo={description:"",methods:[],displayName:"Secondary"};d.__docgenInfo={description:"",methods:[],displayName:"IconOnly"};p.__docgenInfo={description:"",methods:[],displayName:"Loader"};var S,B,I;l.parameters={...l.parameters,docs:{...(S=l.parameters)==null?void 0:S.docs,source:{originalSource:`() => <StoryContainer>
+    <Button onClick={action('clicked')}>Text only</Button>
+    <Button icon="send" onClick={action('clicked')}>
+      Icon left
+    </Button>
+    <Button iconEnd="arrow-right" onClick={action('clicked')}>
+      Icon right
+    </Button>
+  </StoryContainer>`,...(I=(B=l.parameters)==null?void 0:B.docs)==null?void 0:I.source}}};var b,E,w;s.parameters={...s.parameters,docs:{...(b=s.parameters)==null?void 0:b.docs,source:{originalSource:`() => <StoryContainer>
+    <Button secondary onClick={action('clicked')}>
+      Text only
+    </Button>
+    <Button secondary icon="arrow-right" onClick={action('clicked')}>
+      Icon left
+    </Button>
+    <Button secondary iconEnd="arrow-right" onClick={action('clicked')}>
+      Icon right
+    </Button>
+  </StoryContainer>`,...(w=(E=s.parameters)==null?void 0:E.docs)==null?void 0:w.source}}};var R,L,j;d.parameters={...d.parameters,docs:{...(R=d.parameters)==null?void 0:R.docs,source:{originalSource:`() => <StoryContainer gutter={20}>
+    <Button iconOnly aria-label="Send" icon="send" onClick={action('clicked')} />
+    <Button iconOnly aria-label="Figma" icon="figma" onClick={action('clicked')} />
+    <Button iconOnly aria-label="Close" icon="close" onClick={action('clicked')} />
+  </StoryContainer>`,...(j=(L=d.parameters)==null?void 0:L.docs)==null?void 0:j.source}}};var D,P,v;p.parameters={...p.parameters,docs:{...(D=p.parameters)==null?void 0:D.docs,source:{originalSource:`() => <StoryContainer>
+    <LoadableButton>Click to load</LoadableButton>
+    <LoadableButton icon="send">Click to load</LoadableButton>
+  </StoryContainer>`,...(v=(P=p.parameters)==null?void 0:P.docs)==null?void 0:v.source}}};const Oo=["Primary","Secondary","IconOnly","Loader"];export{d as IconOnly,p as Loader,l as Primary,s as Secondary,Oo as __namedExportsOrder,ko as default};

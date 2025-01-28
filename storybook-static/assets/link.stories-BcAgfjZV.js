@@ -1,0 +1,8 @@
+import{a as s,j as S}from"./jsx-runtime-BQA5H8uj.js";import{r as x}from"./index-CBqU2yxZ.js";import{c as g}from"./style-CdEeFtaU.js";import{L as w}from"./components-CTfR_Gqy.js";import{S as j}from"./story-container-BmzpGumI.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-BtM5VmRH.js";import"./iframe-CpXMnJUM.js";import"../sb-preview/runtime.js";const E="_link_1h1qj_2",D={link:E},V=["txt","png","jpg"];function v(n){const i=V.includes(n==null?void 0:n.split(".").pop());return(n==null?void 0:n.includes("://"))||(n==null?void 0:n[0])==="#"||i}const r=x.forwardRef(({rel:n,target:i,children:a,secondary:d,className:k,href:t,...u},y)=>{const e=t==null?void 0:t.includes("://"),_=n||(e?"noreferrer noopener":void 0),L=i||(e?"_blank":void 0),c={className:g(D.link,k),"data-secondary":d,rel:_,href:t,target:L,ref:y,...u};return v(t)?s("a",{...c,href:t,children:a}):s(w,{unstable_viewTransition:!0,prefetch:"intent",...c,to:t,children:a})});r.__docgenInfo={description:"",methods:[],displayName:"Link"};const h={title:"Link"},o=()=>S(j,{style:{fontSize:18},children:[s(r,{href:"https://hamishw.com",children:"Primary link"}),s(r,{secondary:!0,href:"https://hamishw.com",children:"Secondary link"})]});o.__docgenInfo={description:"",methods:[],displayName:"Default"};var l,m,p;o.parameters={...o.parameters,docs:{...(l=o.parameters)==null?void 0:l.docs,source:{originalSource:`() => <StoryContainer style={{
+  fontSize: 18
+}}>
+    <Link href="https://hamishw.com">Primary link</Link>
+    <Link secondary href="https://hamishw.com">
+      Secondary link
+    </Link>
+  </StoryContainer>`,...(p=(m=o.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};const q=["Default"];export{o as Default,q as __namedExportsOrder,h as default};
