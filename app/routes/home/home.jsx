@@ -10,7 +10,18 @@ import sliceTexture from '~/assets/slice-app.jpg';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
-import { Footer } from '~/components/footer';
+import ThomasStoner from '~/assets/thomas-stoner.png';
+import Webbting from '~/assets/webbting-homepage.png';
+import FutureTechLearning from '~/assets/future-tech-learning.png';
+import LahoreOnline from "~/assets/lahore-online.png";
+import CandyRific from "~/assets/candyrific.png";
+import CyptoLinks from "~/assets/cypto-links.png";
+import CARERFINDER from "~/assets/carerfinder.png";
+import Naqdina from "~/assets/naqdina.png";
+import Verity from "~/assets/verity.png";
+import ParentHelpMain from "~/assets/parent-help-signup.jpg";
+import ParentHelpHome from "~/assets/parent-help-chat.jpg";
+;import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
@@ -53,10 +64,20 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
+  const projectFive = useRef();
+  const projectSix = useRef();
+  const projectSeven = useRef();
+  const projectEight = useRef();
+  const projectNine = useRef();
+  const projectTen = useRef();
+  const projectEleven = useRef();
+  const projectTwelve = useRef();
+  const projectThirteen = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree,projectFour,projectFive,projectSix,projectSeven,projectEight, projectNine,projectTen,projectEleven,projectTwelve,projectThirteen,details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -98,6 +119,7 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -118,6 +140,7 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-2"
         alternate
@@ -159,6 +182,241 @@ export const Home = () => {
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Parent Help"
+        description="Navigate your parenting
+journey with ease using
+our comprehensive guide!
+The 'Parent Help' app
+provides expert advice,
+practical solutions, and
+insightful tips to tackle
+every parenting challenge."
+        buttonText="view website"
+        buttonLink="#"
+        model={{
+          type: 'phone',
+          alt: 'Navigate you parenting journey',
+          textures: [
+            {
+              srcSet: `${ParentHelpHome} 375w, ${ParentHelpHome} 750w`,
+              placeholder: ParentHelpHome,
+            },
+            {
+              srcSet: `${ParentHelpMain} 375w, ${ParentHelpMain} 750w`,
+              placeholder: ParentHelpMain,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
+        title="THOMAS STONER"
+        description="Office Solutions Provider for Stationery,
+Furniture, Technology Products & More in West
+Yorkshire."
+        buttonText="View project"
+        buttonLink="/projects/thomas-stoner"
+        model={{
+          type: 'laptop',
+          alt: 'Office Solutions Provider',
+          textures: [
+            {
+              srcSet: `${ThomasStoner} 800w, ${ThomasStoner} 1920w`,
+              placeholder: ThomasStoner,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-6"
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
+        alternate={true}
+
+        title="WEBBTING"
+        description="A DIGITAL MARKETING SERVICES PROVIDER PLATFORM"
+        buttonText="View website"
+        buttonLink="https://www.webbting.com/"
+        model={{
+          type: 'laptop',
+          alt: 'Digital marketing services provider',
+          textures: [
+            {
+              srcSet: `${Webbting} 800w, ${Webbting} 1920w`,
+              placeholder: Webbting,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={7}
+        title="FUTURE TECH LEARNING"
+        description="Elevate your career with hands-on courses and
+professional certificates. Learn from industry
+professionals."
+        buttonText="View website"
+        buttonLink="https://futuretechlearning.com/"
+        model={{
+          type: 'laptop',
+          alt: 'learning platform',
+          textures: [
+            {
+              srcSet: `${FutureTechLearning} 800w, ${FutureTechLearning} 1920w`,
+              placeholder: FutureTechLearning,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-8"
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectEight.current)}
+        index={8}
+        alternate={true}
+
+        title="LAHORE ONLINE"
+        description="A TOURIST GUIDE WEBSITE
+HELPS FIND DIFFERENT TOURISM SPOTS
+ACCROSS CITY"
+        buttonText="View website"
+        buttonLink="https://lahore.online/"
+        model={{
+          type: 'laptop',
+          alt: 'tour guide platform',
+          textures: [
+            {
+              srcSet: `${LahoreOnline} 800w, ${LahoreOnline} 1920w`,
+              placeholder: LahoreOnline,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-9"
+        sectionRef={projectNine}
+        visible={visibleSections.includes(projectNine.current)}
+        index={9}
+
+        title="CANDYRIFIC"
+        description="A PREMIUM CANDY AND BEVERAGES STORE"
+        buttonText="View website"
+        buttonLink="https://www.candyrific.com/"
+        model={{
+          type: 'laptop',
+          alt: 'candy and beverage store',
+          textures: [
+            {
+              srcSet: `${CandyRific} 800w, ${CandyRific} 1920w`,
+              placeholder: CandyRific,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-10"
+        sectionRef={projectTen}
+        visible={visibleSections.includes(projectTen.current)}
+        index={10}
+        alternate={true}
+
+        title="CAREER FINDER"
+        description="JOB OPPORTUNITY FINDER IN YOUR AREA"
+        buttonText="View website"
+        buttonLink="https://carerfinder.com/"
+        model={{
+          type: 'laptop',
+          alt: 'cryptocurrency guide site',
+          textures: [
+            {
+              srcSet: `${CARERFINDER} 800w, ${CARERFINDER} 1920w`,
+              placeholder: CARERFINDER,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-11"
+        sectionRef={projectEleven}
+        visible={visibleSections.includes(projectEleven.current)}
+        index={11}
+        title="NAQDINA"
+        description="A PAYMENT SERVICES PROVIDER SITE"
+        buttonText="View project"
+        buttonLink="/projects/carerfinder"
+        model={{
+          type: 'laptop',
+          alt: 'payment services provider',
+          textures: [
+            {
+              srcSet: `${Naqdina} 800w, ${Naqdina} 1920w`,
+              placeholder: Naqdina,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-12"
+        sectionRef={projectTwelve}
+        visible={visibleSections.includes(projectTwelve.current)}
+        index={12}
+        title="Verity"
+        alternate={true}
+        description="UNDISPUTED NEWS SITE"
+        buttonText="View website"
+        buttonLink="https://www.verity.news/"
+        model={{
+          type: 'laptop',
+          alt: 'news site',
+          textures: [
+            {
+              srcSet: `${Verity} 800w, ${Verity} 1920w`,
+              placeholder: Verity,
+            },
+          ],
+        }}
+      />
+
+<ProjectSummary
+        id="project-13"
+        sectionRef={projectThirteen}
+        visible={visibleSections.includes(projectThirteen.current)}
+        index={13}
+        title="CYPTO LINKS"
+        description="A CRYPTOCURRENCY GUIDE SITE FOR BEGINNERS"
+        buttonText="View website"
+        buttonLink="https://cryptolinks.com/"
+        model={{
+          type: 'laptop',
+          alt: 'cryptocurrency guide site',
+          textures: [
+            {
+              srcSet: `${CyptoLinks} 800w, ${CyptoLinks} 1920w`,
+              placeholder: CyptoLinks,
             },
           ],
         }}

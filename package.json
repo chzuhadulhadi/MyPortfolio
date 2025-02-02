@@ -1,18 +1,17 @@
 {
   "name": "portfolio",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://zuhad.pages.dev",
   "description": "Portfolio site for Zuhad Ul Hadi",
-  "repository": "https://github.com/HamishMW/portfolio.git",
+  "repository": "https://github.com/chzuhadulhadi/portfolio.git",
   "author": "Zuhad Ul Hadi",
   "sideEffects": false,
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
-    "start": "node server.js",
-    "vercel-build": "remix vite:build",
+    "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
+    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name zuhad",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
